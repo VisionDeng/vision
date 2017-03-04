@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class DiamondTest {
+	public static void main(String[] args){
+		ArrayList<String> books=new ArrayList<>();
+		books.add("疯狂");
+		books.add("crazy");
+		books.forEach(ele->System.out.println(ele.length()));
+		HashMap<String,ArrayList<String>> schoolsInfo=new HashMap<>();
+		ArrayList<String> schools=new ArrayList<>();
+		schools.add("写");
+		schools.add("xi");
+		schoolsInfo.put("孙悟空", schools);
+		schoolsInfo.forEach((key,value)->System.out.println(key+"->"+value));
+	}
+}
